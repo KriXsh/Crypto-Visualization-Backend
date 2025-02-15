@@ -55,7 +55,7 @@ npm run format
 
 ---
 
-## **📌 Frontend Setup (Next.js + React)**
+## **📌 Frontend Setup (Next.js + React)** -- will on another repo 
 
 ### **1️⃣ Install Dependencies**
 Navigate to the frontend project root and run:
