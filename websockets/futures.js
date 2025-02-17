@@ -20,7 +20,7 @@ const connectFuturesWebSockets = () => {
             symbol: "BTCUSDT",
             price: trade.p,
             volume: trade.q,
-            timestamp: trade.T
+            createdAt: new Date(trade.T)
         };
         // console.log("Binance Futures Trade:", formattedTrade);
         broadcastMessage("futures_trade_update", formattedTrade);
@@ -51,7 +51,7 @@ const connectFuturesWebSockets = () => {
                     symbol: trade.s,
                     price: trade.p,
                     volume: trade.v,
-                    timestamp: trade.T
+                    createdAt: new Date(trade.T)
                 };
                 // console.log("ByBit Futures Trade:", formattedTrade);
                 broadcastMessage("futures_trade_update", formattedTrade);
