@@ -55,6 +55,9 @@ export const getBinanceSpotOHLCV = async (req, res) => {
 };
 
 
+
+const BINANCE_FUTURES_API_BASE = 'https://fapi.binance.com';
+
 /**
  * Fetch Binance Futures OHLCV Data with Proper Date Filtering
  */
